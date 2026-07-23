@@ -56,7 +56,7 @@ This project builds a predictive model to estimate laptop prices based on hardwa
 
 ---
 
-## 🔄 Project Workflow
+## Project Workflow
 
 ```
 Data Loading
@@ -78,7 +78,7 @@ Model Export & Deployment
 
 ---
 
-## 🛠️ Data Preprocessing
+## Data Preprocessing
 
 ### Step 1: Remove Unnecessary Columns
 ```python
@@ -111,7 +111,7 @@ df['Weight'] = df['Weight'].astype('float32')
 
 ---
 
-## 🔧 Feature Engineering
+## Feature Engineering
 
 ### 1. Screen Resolution Analysis & Feature Extraction
 
@@ -285,7 +285,7 @@ df['os'] = df['OpSys'].apply(cat_os)
 
 ---
 
-## 📈 Exploratory Data Analysis
+## Exploratory Data Analysis
 
 ### Visualizations Created
 
@@ -314,7 +314,7 @@ y = np.log(df['Price'])
 
 ---
 
-## 📊 Final Dataset Features
+## Final Dataset Features
 
 After feature engineering, the final dataset contains:
 
@@ -336,7 +336,7 @@ After feature engineering, the final dataset contains:
 
 ---
 
-## 🔀 Data Splitting
+## Data Splitting
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -350,7 +350,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random
 
 ---
 
-## 🤖 Model Development
+## Model Development
 
 ### Preprocessing Pipeline
 
@@ -478,7 +478,7 @@ step2 = XGBRegressor(n_estimators=45, max_depth=5, learning_rate=0.5)
 
 ---
 
-## 🚀 Overfitting Reduction Techniques
+## Overfitting Reduction Techniques
 
 ### 1. Regularization
 
@@ -558,7 +558,7 @@ step2 = StackingRegressor(estimators=estimators, final_estimator=Ridge(alpha=100
 
 ---
 
-## 📊 Model Comparison & Results
+## Model Comparison & Results
 
 ### Evaluation Metrics
 
@@ -580,7 +580,7 @@ All models are evaluated using:
 
 ---
 
-## 📦 Output & Model Export
+## Output & Model Export
 
 ### Model Serialization
 
@@ -615,7 +615,7 @@ predicted_prices = np.exp(new_predictions)
 
 ---
 
-## 📚 Libraries Used
+## Libraries Used
 
 ### Core Data Science
 - **NumPy:** Numerical computations
@@ -638,7 +638,7 @@ predicted_prices = np.exp(new_predictions)
 
 ---
 
-## 🎯 Key Insights
+## Key Insights
 
 ### Feature Importance (Expected)
 1. **CPU Brand** - High correlation with price
@@ -660,7 +660,7 @@ predicted_prices = np.exp(new_predictions)
 
 ---
 
-## 🔄 Workflow Summary
+## Workflow Summary
 
 ```
 1. Data Loading & Exploration
@@ -711,7 +711,7 @@ predicted_prices = np.exp(new_predictions)
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 ### Training
 ```python
@@ -732,7 +732,7 @@ predicted_price = np.exp(predicted_log_price)  # Convert from log scale
 
 ---
 
-## 📝 Notes
+## Notes
 
 - All categorical variables undergo One-Hot Encoding with `drop='first'` to avoid multicollinearity
 - Log transformation applied to Price for better model performance
