@@ -19,7 +19,7 @@ A comprehensive machine learning project that predicts laptop prices using vario
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This project builds a predictive model to estimate laptop prices based on hardware specifications and features. The goal is to develop an accurate regression model that can predict laptop prices using various machine learning algorithms and ensemble techniques.
 
